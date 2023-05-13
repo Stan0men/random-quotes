@@ -5,17 +5,54 @@
   border-radius: 3px;
   width: 450px;
   padding: 40px 50px;
-  display: table;
-  background-color: #fff;
   margin: 10% auto;
 }
 
 #text {
   font-size: 30px;
+  color: #000;
+}
+
+#author {
+  text-align: right;
 }
 
 #wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#wrapper-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote {
+  border: none;
+  border-radius: 3px;
+  color: #fff !important;
+  outline: none;
+  font-size: 0.85em;
+  padding: 6px 18px 6px 18px;
+  opacity: 1;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+svg {
+  background: none !important;
+}
+
+#author,
+#tweet-quotem,
+a,
+i,
+#wrapper,
+#wrapper-right,
+#wrapper-left,
+#quote-box,
+#text {
+  background-color: #fff !important;
 }
