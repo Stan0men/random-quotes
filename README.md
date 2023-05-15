@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Link to the app
+
+[Random quotes](https://stan0men.github.io/random_quotes/)
+
+# Getting Started with Create React Ap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
