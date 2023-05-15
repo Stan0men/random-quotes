@@ -5,6 +5,7 @@ import { FaTwitterSquare, FaTumblrSquare } from "react-icons/fa";
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState("");
   const [author, setQuoteAuthor] = useState("");
+  const [randomColor, setRandomColor] = useState("");
 
   useEffect(() => {
     fetchQuote();
@@ -23,7 +24,6 @@ const QuoteGenerator = () => {
         console.log("Error fetching quote:", error);
       });
   };
-  const [randomColor, setRandomColor] = useState("");
 
   const getRandomColor = () => {
     const letters = "0123456789ABCDEF";
@@ -49,7 +49,13 @@ const QuoteGenerator = () => {
 
   useEffect(() => {
     changeColors();
+    fetchQuote();
   }, []);
+
+  const handleNextQuote = () => {
+    fetchQuote();
+    changeColors();
+  };
 
   return (
     <div id="quote-box">
@@ -68,7 +74,7 @@ const QuoteGenerator = () => {
             <FaTumblrSquare />
           </a>
         </div>
-        <button id="tweet-quote" onClick={(fetchQuote, changeColors)}>
+        <button id="tweet-quote" onClick={handleNextQuote}>
           Next Quote
         </button>
       </div>
