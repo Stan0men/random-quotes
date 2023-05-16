@@ -1,6 +1,6 @@
 # Link to the app
 
-[Random quotes](https://stan0men.github.io/random_quotes/)
+[Random quotes](https://stan0men.github.io/random-quotes/)
 
 # Getting Started with Create React Ap
 
